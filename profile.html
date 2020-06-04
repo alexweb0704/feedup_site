@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedUp</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- 
+        Здесь был Саша, советую не трогать стили. А то все по плывет;)))
+        Вообще то копаться в чужем коде, это грех, ну эта инфа на всякий случай.
+    -->
+</head>
+
+<body>
+    <div class="container-fluid h-100 d-flex flex-column align-items-stretch px-4">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fal fa-bars fa-lg text-warning"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">О Компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="nav-profile">
+                        <a href="/" class="d-flex align-items-center text-warning text-decoration-none">
+                            <div class="nav-profile-text text-right">
+                                Авторизация
+                            </div>
+                            <div class="nav-profile-icon">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fal fa-user fa-stack-1x text-white"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mt-3 row h-100">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+                <ul class="nav fa-lg text-uppercase mb-3 font-weight-bold products-tab flex-nowrap pb-3 overflow-x-auto text-nowrap"
+                    id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active text-muted" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Активные заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">История заказов</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row d-flex overflow-x-auto draggable">
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="/order.html">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 my-2">
+                                <a class="card border-warning rounded-0 bg-transparent text-white text-decoration-none d-block"
+                                    href="javascript:;">
+                                    <div class="p-2">
+                                        Заказ номер №12345
+                                    </div>
+                                    <div class="px-2">
+                                        150 000 сум
+                                    </div>
+                                    <div class="p-2">
+                                        01.01.2020 03:57
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 d-flex flex-column mt-4 mt-md-0">
+                <div class="box-squared mb-3" id="profileBox">
+                    <div></div>
+                    <div class="box-content p-3">
+                        <div class="h-100" id="previewProfile">
+                            <div class="h-100 d-flex flex-column text-white">
+                                <div class="mb-auto table-responsive pb-2">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td class="pb-2 pt-1">
+                                                    ФИО:
+                                                </td>
+                                                <td>
+                                                    Иванов А.А.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Номер телефона:
+                                                </td>
+                                                <td>
+                                                    +998903297989
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-2">
+                                                    Пол:
+                                                </td>
+                                                <td>
+                                                    Мужчина
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Дата рождения:
+                                                </td>
+                                                <td>
+                                                    07.04.1999
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="border-top-4 p-3 mt-1 text-right">
+                                    <a href="javascript:;" class="text-warning text-decoration-none"
+                                        onclick="$('#editProfileLayer').toggleClass('d-none'); $('#previewProfile').toggleClass('d-none');$('#updateProfileForm').toggleClass('d-none');">
+                                        Редактировать данные
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="updateProfileForm" class="d-none h-100">
+                            <div class="h-100 d-flex flex-column text-white">
+                                <div class="mb-auto table-responsive pb-2">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    ФИО:
+                                                </td>
+                                                <td>
+
+                                                    <input type="text"
+                                                        class="form-control form-control-sm bg-transparent rounded-0 border-0 border-bottom border-warning shadow-0"
+                                                        id="nameField" placeholder="Введите свое ФИО">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Номер телефона:
+                                                </td>
+                                                <td>
+                                                    <input type="text"
+                                                        class="form-control form-control-sm bg-transparent rounded-0 border-0 border-bottom border-warning shadow-0"
+                                                        id="nameField" placeholder="Введите свой номер телефона">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Пол:
+                                                </td>
+                                                <td>
+                                                    <select class="form-control form-control-sm bg-transparent rounded-0 border-0 border-bottom border-warning shadow-0">
+                                                        <option value="">Мужчина</option>
+                                                        <option value="">Женщина</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Дата рождения:
+                                                </td>
+                                                <td>
+                                                    <input type="date"
+                                                        class="form-control form-control-sm bg-transparent rounded-0 border-0 border-bottom border-warning shadow-0"
+                                                        id="nameField" placeholder="Введите свой номер телефона">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="border-top-4 p-3 mt-1 d-flex justify-content-between">
+                                    <a href="javascript:;" class="text-white text-decoration-none"
+                                        onclick="$('#editProfileLayer').toggleClass('d-none'); $('#previewProfile').toggleClass('d-none');$('#updateProfileForm').toggleClass('d-none');">
+                                        Отменить
+                                    </a>
+                                    <a href="javascript:;" class="text-warning text-decoration-none"
+                                        onclick="$('#editProfileLayer').toggleClass('d-none'); $('#previewProfile').toggleClass('d-none');$('#updateProfileForm').toggleClass('d-none');">
+                                        Сохранить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </main>
+        <footer class="d-flex justify-content-center fa-lg p-2">
+            <a href="javascript:;" class="text-muted p-1 m-2 text-decoration-none active">
+                RU
+            </a>
+            <a href="javascript:;" class="text-muted p-1 m-2 text-decoration-none">
+                UZ
+            </a>
+            <a href="#" class="text-muted p-1 m-2">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#" class="text-muted p-1 m-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-muted p-1 m-2">
+                <i class="fal fa-phone"></i>
+            </a>
+        </footer>
+        <div id="editProfileLayer" class="d-none"></div>
+    </div>
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

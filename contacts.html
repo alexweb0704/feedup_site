@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedUp</title>
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-fluid h-100 d-flex flex-column align-items-stretch px-4">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fal fa-bars fa-lg text-warning"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">О Компании</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/contacts.html">Контакты <span
+                                    class="sr-only">(Текущая)</span></a>
+                        </li>
+                    </ul>
+                    <a href="/" class="h2 ml-3 px-3 text-warning text-decoration-none font-weight-bolder">
+                        Создать заказ
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main class="mb-auto mt-3 row h4 text-muted font-weight-light">
+            <div class="col-md-6 order-md-1">
+                <script src="https://api-maps.yandex.ru/2.1/?apikey=b3508d3d-0013-4673-8568-f81e8af2da2b&lang=ru_RU" type="text/javascript"> </script>
+                <div id="map" style="width: 100%;  height: calc(100vh - 16rem); border-radius: .25rem; overflow: hidden;"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 my-2">
+                        Call-center:
+                    </div>
+                    <div class="col-6 col-md-8 col-lg-5 my-2">
+                        <a href="tel:+998903297989" class="text-muted text-decoration-none w-100 d-flex">
+                            +998 90 329 79 89
+                            <i class="fal fa-phone small ml-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 d-none d-lg-block  my-2 text-warning">
+                        Звони
+                    </div>
+                </div>
+                <div class="row">        
+                    <div class="col-6 col-md-4 col-lg-3 my-2">
+                        e-mail:
+                    </div>
+                    <div class="col-6 col-md-8 col-lg-5 my-2">
+                        <a href="mailto:info@feedup.uz" class="text-muted text-decoration-none w-100 d-flex">
+                            info@feedup.uz
+                            <i class="fal fa-envelope ml-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 d-none d-lg-block my-2 text-warning">
+                        Пиши
+                    </div>
+                </div>
+                <div class="row">
+                        
+                    <div class="col-6 col-lg-3 my-2">
+                        Tg Bot:
+                    </div>
+                    <div class="col-6 col-lg-5 my-2">
+                        <a href="t.me:info@feedup.uz" class="text-muted text-decoration-none w-100 d-flex">
+                            @feedup_uz
+                            <i class="fab fa-telegram ml-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 d-none d-lg-block my-2 text-warning">
+                        Еще пиши
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-3 my-2">
+                        Адрес:
+                    </div>
+                    <div class="col-6 col-lg-5 my-2">
+                        <a href="javascript:;" class="text-muted text-decoration-none w-100 d-flex">
+                            головной офис: Какой-то район, улица какая-то, 65-А
+                            <i class="fal fa-location ml-auto"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 d-none d-lg-block my-2 text-warning">
+                        Приходи
+                    </div>
+                    
+                    <div class="col-4 d-none d-lg-block offset-8 my-2 text-warning">
+                        Чего ты ждешь?
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="d-flex justify-content-center fa-lg p-2">
+        <a href="javascript:;" class="text-muted p-1 m-2 text-decoration-none active">
+            RU
+        </a>
+        <a href="javascript:;" class="text-muted p-1 m-2 text-decoration-none">
+            UZ
+        </a>
+        <a href="#" class="text-muted p-1 m-2">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="#" class="text-muted p-1 m-2">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-muted p-1 m-2">
+            <i class="fal fa-phone"></i>
+        </a>
+    </footer>
+    </div>
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        ymaps.ready(init);
+    var myMap, branch, clientPlacemark;
+    
+    // Создание метки.
+    function createPlacemark(coords) {
+        return new ymaps.Placemark(coords, {
+            iconCaption: 'поиск...'
+        }, {
+            preset: 'islands#violetDotIconWithCaption',
+            draggable: true
+        });
+    }
+    
+    function init() {
+        myMap = new ymaps.Map("map", {
+            center: [41.2995, 69.2401],
+            zoom: 12
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+        
+        
+       
+           // Описания кафе можно хранить в формате JSON, а потом генерировать
+        // из описания геообъекты с помощью ymaps.geoQuery.
+        // branch = ymaps.geoQuery({
+        //     type: 'FeatureCollection',
+        //     features: [
+        //         {% for branch in branches %}
+        //             {
+        //                 type: 'Feature',
+        //                 properties: {
+        //                     id: {{branch.id}},
+        //                     balloonContent: '{{ branch.name }}'
+        //                 },
+        //                 geometry: {
+        //                     type: 'Point',
+        //                     coordinates: [{{branch.lat}}, {{branch.lon}}]
+        //                 }
+        //             },
+        //         {% endfor %}
+        //     ]
+        // // Сразу добавим точки на карту.
+        // }).addToMap(myMap);
+        
+    }
+    function getAddress(coords) {
+        clientPlacemark.properties.set('iconCaption', 'поиск...');
+        ymaps.geocode(coords).then(function (res) {
+            var firstGeoObject = res.geoObjects.get(0);
+            $("#addressField").val(firstGeoObject.getAddressLine());
+            clientPlacemark.properties.set({
+                // Формируем строку с данными об объекте.
+                iconCaption: [
+                    // Название населенного пункта или вышестоящее административно-территориальное образование.
+                    firstGeoObject.getLocalities().length ? firstGeoObject.getLocalities() : firstGeoObject.getAdministrativeAreas(),
+                    // Получаем путь до топонима, если метод вернул null, запрашиваем наименование здания.
+                    firstGeoObject.getThoroughfare() || firstGeoObject.getPremise()
+                ].filter(Boolean).join(', '),
+                // В качестве контента балуна задаем строку с адресом объекта.
+                balloonContent: firstGeoObject.getAddressLine()
+            });
+        });
+    }
+</script>
+</body>
+
+</html>
